@@ -1,4 +1,4 @@
-// File: /Users/jassi/Desktop/jassi.dev/src/app/layout.js
+// File: /Users/jassi/Desktop/repo/jassi.dev/src/app/layout.js
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
