@@ -1,0 +1,345 @@
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/LogoLoop.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+.logoloop {
+  position: relative;
+
+  --logoloop-gap: 32px;
+  --logoloop-logoHeight: 28px;
+  --logoloop-fadeColorAuto: #ffffff;
+}
+
+.logoloop--vertical {
+  height: 100%;
+  display: inline-block;
+}
+
+.logoloop--scale-hover {
+  padding-top: calc(var(--logoloop-logoHeight) * 0.1);
+  padding-bottom: calc(var(--logoloop-logoHeight) * 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  .logoloop {
+    --logoloop-fadeColorAuto: #0b0b0b;
+  }
+}
+
+.logoloop__track {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  will-change: transform;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: relative;
+  z-index: 0;
+}
+
+.logoloop--vertical .logoloop__track {
+  flex-direction: column;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+}
+
+.logoloop__list {
+  display: flex;
+  align-items: center;
+}
+
+.logoloop--vertical .logoloop__list {
+  flex-direction: column;
+}
+
+.logoloop__item {
+  flex: 0 0 auto;
+  margin-right: var(--logoloop-gap);
+  font-size: var(--logoloop-logoHeight);
+  line-height: 1;
+}
+
+.logoloop--vertical .logoloop__item {
+  margin-right: 0;
+  margin-bottom: var(--logoloop-gap);
+}
+
+.logoloop__item:last-child {
+  margin-right: var(--logoloop-gap);
+}
+
+.logoloop--vertical .logoloop__item:last-child {
+  margin-right: 0;
+  margin-bottom: var(--logoloop-gap);
+}
+
+.logoloop__node {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logoloop__item img {
+  height: var(--logoloop-logoHeight);
+  width: auto;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-user-drag: none;
+  pointer-events: none;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logoloop--scale-hover .logoloop__item {
+  overflow: visible;
+}
+
+.logoloop--scale-hover .logoloop__item:hover img,
+.logoloop--scale-hover .logoloop__item:hover .logoloop__node {
+  transform: scale(1.2);
+  transform-origin: center center;
+}
+
+.logoloop--scale-hover .logoloop__node {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logoloop__link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.logoloop__link:hover {
+  opacity: 0.8;
+}
+
+.logoloop__link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.logoloop--fade::before,
+.logoloop--fade::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: clamp(24px, 8%, 120px);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.logoloop--fade::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto)) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.logoloop--fade::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto)) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.logoloop--vertical.logoloop--fade::before,
+.logoloop--vertical.logoloop--fade::after {
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: clamp(24px, 8%, 120px);
+}
+
+.logoloop--vertical.logoloop--fade::before {
+  top: 0;
+  bottom: auto;
+  background: linear-gradient(
+    to bottom,
+    var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto)) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.logoloop--vertical.logoloop--fade::after {
+  bottom: 0;
+  top: auto;
+  background: linear-gradient(
+    to top,
+    var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto)) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logoloop__track {
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  .logoloop__item img,
+  .logoloop__node {
+    transition: none !important;
+  }
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/app/page.module.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.page_main__akH3E {
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+.page_main__akH3E .page_mailLink__XhUbm {
+  display: block;
+  text-align: center;
+  color: #afa18f;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+.page_main__akH3E .page_mailLink__XhUbm:hover {
+  color: #a8cfdb;
+}
+.page_main__akH3E .page_desktopDisclaimer__O12so {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: #afa18f;
+  font-size: 12px;
+  margin: 0;
+  z-index: 100;
+  opacity: 0.7;
+}
+.page_main__akH3E .page_mask__4DN19, .page_main__akH3E .page_body__q2a0r {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #afa18f;
+  font-size: 48px;
+  line-height: 1.1;
+  cursor: default;
+  padding-top: 6rem;
+}
+.page_main__akH3E .page_mask__4DN19 p, .page_main__akH3E .page_body__q2a0r p {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.page_main__akH3E .page_mask__4DN19 .page_blue__GzfZg, .page_main__akH3E .page_body__q2a0r .page_blue__GzfZg {
+  color: #a8cfdb;
+}
+.page_main__akH3E .page_mask__4DN19 {
+  -webkit-mask-image: url(/_next/static/media/mask.b11f34bb.svg);
+          mask-image: url(/_next/static/media/mask.b11f34bb.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: 40px;
+          mask-size: 40px;
+  background: #a8cfdb;
+  position: absolute;
+  color: black;
+}
+.page_main__akH3E .page_large__X04CZ {
+  font-size: 250px;
+}
+@media (max-width: 768px) {
+  .page_main__akH3E .page_mask__4DN19 {
+    display: none;
+  }
+  .page_main__akH3E .page_desktopDisclaimer__O12so {
+    display: block;
+  }
+  .page_main__akH3E .page_projectCard__Lw0tk {
+    padding: 1rem 1.5rem;
+    max-width: 85%;
+  }
+  .page_main__akH3E .page_cardTitle__NUFqk {
+    font-size: 18px;
+  }
+  .page_main__akH3E .page_cardSubtitle__tPGqf {
+    font-size: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .page_main__akH3E .page_body__q2a0r {
+    font-size: 28px;
+    padding-top: 6rem;
+    gap: 3rem;
+  }
+  .page_main__akH3E .page_large__X04CZ {
+    font-size: 80px;
+  }
+  .page_main__akH3E .page_projectCard__Lw0tk {
+    padding: 1.25rem 2rem;
+    max-width: 90%;
+    margin-top: 3rem;
+  }
+  .page_main__akH3E .page_projectCard__Lw0tk .page_cardTitle__NUFqk {
+    font-size: 20px;
+  }
+  .page_main__akH3E .page_projectCard__Lw0tk .page_cardSubtitle__tPGqf {
+    font-size: 32px;
+  }
+}
+.page_main__akH3E .page_projectCard__Lw0tk {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: white;
+  border: 1px solid rgba(168, 207, 219, 0.3);
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  backdrop-filter: blur(10px);
+  max-width: 400px;
+  align-items: center;
+  text-align: center;
+}
+.page_main__akH3E .page_projectCard__Lw0tk:hover {
+  background: white;
+  border-color: rgba(168, 207, 219, 0.6);
+  transform: translateY(-2px);
+}
+.page_main__akH3E .page_cardTitle__NUFqk {
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+  font-family: monospace;
+  letter-spacing: 0.5px;
+}
+.page_main__akH3E .page_cardSubtitle__tPGqf {
+  font-size: 32px;
+  color: black;
+  font-weight: 400;
+  font-family: monospace;
+}
+.page_main__akH3E .page_wow__dasf4 {
+  margin-top: auto;
+  margin-bottom: 0.5rem;
+}
+.page_main__akH3E .page_logoLoopContainer__FW2mp {
+  width: 100%;
+  margin-bottom: 1rem;
+  background: white;
+  padding-top: 0.05rem;
+  padding-bottom: 0.05rem;
+}

@@ -22,7 +22,6 @@ const toolLogos = [
   { src: logo5.src, title: "Tailwind", href: "https://tailwindcss.com/", style: { height: "96px", width: "auto" } },
   { src: logo6.src, title: "VSC", href: "https://code.visualstudio.com/", style: { height: "96px", width: "auto" } },
   { src: logo7.src, title: "Github", href: "https://github.com/", style: { height: "96px", width: "auto" } },
-  { src: logo8.src, title: "Qwen-Code", href: "https://github.com/QwenLM/qwen-code", style: { height: "96px", width: "auto" } },
   { src: logo9.src, title: "Electron", href: "https://electronjs.org/", style: { height: "96px", width: "auto" } },
 ];
 
