@@ -43,12 +43,12 @@ export default function Home() {
         transition={{ type: "tween", ease: "backOut", duration: 0.5 }}
       >
         <p onMouseEnter={() => { setIsHovered(true) }} onMouseLeave={() => { setIsHovered(false) }}>
-          Hi, I am Jaskaran <br></br> <span className={styles.large}>I MAKE <br></br>WEBSITES</span> <br></br> check out some of my work
+          Hi, I am Jaskaran <br></br> <span className={styles.large}>I MAKE <br></br>COOL STUFF</span> <br></br> check out some of my work
         </p>
       </motion.div>
 
       <div className={styles.body}>
-        <p>Hi, I am <span className={styles.blue}>Jaskaran</span> <br></br> <span className={styles.large}>I MAKE <br></br><span className={styles.blue}>WEBSITES</span></span><br></br> check out some of my <span className={styles.blue}>work</span></p>
+        <p>Hi, I am <span className={styles.blue}>Jaskaran</span> <br></br> <span className={styles.large}>I MAKE <br></br><span className={styles.blue}>COOL STUFF</span></span><br></br> check out some of my <span className={styles.blue}>work</span></p>
         <div className={styles.projectCard} onClick={() => window.open("https://github.com/jassi-dev404/blades.js")}>
           <span className={styles.cardTitle}>jassi's mono</span>
           <span className={styles.cardSubtitle}>blades.js</span>
